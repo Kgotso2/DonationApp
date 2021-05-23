@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".solicitDonation">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:text="Solicit or Ask for donation here"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgSolicitItems"
+        android:padding="10dp"
+        >
+
+        <RadioButton
+            android:id="@+id/rbPads"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Sanitary Pads"/>
+        <RadioButton
+            android:id="@+id/rbBlanket"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Blanket"/>
+        <RadioButton
+            android:id="@+id/rbJacket"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Jacket"/>
+        <RadioButton
+            android:id="@+id/rbBShoes"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Boys' School Shoes"/>
+        <RadioButton
+            android:id="@+id/rbGShoes"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Girls' School Shoes"/>
+        <RadioButton
+            android:id="@+id/rbSocks"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Socks"/>
+        <RadioButton
+            android:id="@+id/rbTin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Tin Stuff"/>
+        <RadioButton
+            android:id="@+id/rbTrousers"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Trousers"/>
+
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etSolicitAmt"
+        android:inputType="number"
+        android:hint="Amount of Items you wish to receive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etShortBio"
+        android:inputType="textMultiLine"
+        android:hint="Please motivate briefly on why you want this item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="italic"
+        android:text="Add items you got from other sources other than donations to existing items"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgAddToItems"
+        android:padding="10dp"
+        >
+
+        <RadioButton
+            android:id="@+id/rbPadsa"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Sanitary Pads"/>
+        <RadioButton
+            android:id="@+id/rbBlanketa"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Blanket"/>
+        <RadioButton
+            android:id="@+id/rbJacketa"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Jacket"/>
+        <RadioButton
+            android:id="@+id/rbBShoesa"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Boys' School Shoes"/>
+        <RadioButton
+            android:id="@+id/rbGShoesa"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Girls' School Shoes"/>
+        <RadioButton
+            android:id="@+id/rbSocksa"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Socks"/>
+        <RadioButton
+            android:id="@+id/rbTina"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Tin Stuff"/>
+        <RadioButton
+            android:id="@+id/rbTrousersa"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Trousers"/>
+
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etAddAmt"
+        android:inputType="number"
+        android:hint="Amount of Items you wish to add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

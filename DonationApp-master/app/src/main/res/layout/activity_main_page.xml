@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d2d6d3"
+    tools:context=".MainPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/btnAddItems"
+            android:text="Add to..."
+            android:textAllCaps="false"
+            android:textSize="10dp"
+            android:background="@drawable/donate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight=".33"/>
+
+        <Button
+            android:id="@+id/btnDonors"
+            android:text="Donors List"
+            android:textSize="10dp"
+            android:background="@drawable/donors"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight=".33"/>
+        <Button
+            android:id="@+id/btnSolicit"
+            android:text="Solicit Donation"
+            android:background="@drawable/solicit"
+            android:textSize="10dp"
+            android:textAllCaps="false"
+
+            android:layout_marginBottom="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".33"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="10dp"
+        android:id="@+id/rvDonate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

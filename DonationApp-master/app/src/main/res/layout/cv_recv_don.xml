@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_marginBottom="5dp"
+    android:elevation="25dp"
+    android:id="@+id/cvRecvDon">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvRecvID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receiver's ID: "
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tvShortBio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:textColor="#003f91"
+            android:text="In this syntax: First, specify the name of foreign key constraint that you want to create after the CONSTRAINT keyword. If you omit the constraint name, MySQL automatically generates a name for the foreign key constraint."
+            android:layout_marginBottom="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Number: "
+                android:textSize="13dp"
+                />
+
+            <TextView
+                android:id="@+id/tvContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="#748281"
+                android:textStyle="italic"
+                android:textSize="13dp"
+                android:text="062"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of items required: "
+                android:textSize="13dp"
+            />
+
+            <TextView
+                android:id="@+id/tvItemsReq"
+                android:layout_marginLeft="5dp"
+                android:textColor="#00e6da"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:paddingLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivDecrease"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/decrease"
+                android:clickable="true"
+                />
+            <TextView
+                android:id="@+id/tvNumOfItems"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="0"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="25dp"
+                />
+            <ImageView
+                android:id="@+id/ivIncrease"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/increase"
+                android:clickable="true"
+                />
+
+            <Button
+                android:id="@+id/btnRecvDonate"
+                android:text="Donate"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+               android:layout_marginLeft="120dp"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
